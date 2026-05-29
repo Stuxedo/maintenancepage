@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://global.media.stuxedo.com/icon.png">
-    <meta name="description" content="Stuxedo — Coming Soon">
-    <title>Stuxedo — Coming Soon</title>
+    <meta name="description" content="Stuxedo — Under Maintenance">
+    <title>Stuxedo — Under Maintenance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,9 +39,9 @@
             --accent-border-strong: rgba(0, 172, 0, 0.35);
             --accent-border-hover: rgba(0, 172, 0, 0.55);
             --accent-gradient: linear-gradient(90deg, #006400, #00ac00);
-            --chip-color: #00d400;
-            --chip-bg: rgba(0, 172, 0, 0.13);
-            --chip-border: rgba(0, 172, 0, 0.3);
+            --alt-chip-color: #ff7070;
+            --alt-chip-bg: rgba(255, 100, 100, 0.12);
+            --alt-chip-border: rgba(255, 107, 107, 0.28);
             --btn-bg: #00ac00;
             --btn-bg-hover: #00c400;
             --btn-text: #0b0f14;
@@ -68,9 +68,9 @@
                 --accent-border-strong: rgba(0, 100, 0, 0.28);
                 --accent-border-hover: rgba(0, 100, 0, 0.45);
                 --accent-gradient: linear-gradient(90deg, #006400, #00ac00);
-                --chip-color: #004d00;
-                --chip-bg: rgba(0, 100, 0, 0.08);
-                --chip-border: rgba(0, 100, 0, 0.22);
+                --chip-color: #ff7070;
+                --chip-bg: rgba(255, 100, 100, 0.12);
+                --chip-border: rgba(255, 107, 107, 0.28);
                 --btn-bg: #006400;
                 --btn-bg-hover: #007a00;
                 --btn-text: #ffffff;
@@ -96,9 +96,9 @@
             --accent-border-strong: rgba(0, 100, 0, 0.28);
             --accent-border-hover: rgba(0, 100, 0, 0.45);
             --accent-gradient: linear-gradient(90deg, #006400, #00ac00);
-            --chip-color: #004d00;
-            --chip-bg: rgba(0, 100, 0, 0.08);
-            --chip-border: rgba(0, 100, 0, 0.22);
+            --alt-chip-color: #ff7070;
+            --alt-chip-bg: rgba(255, 100, 100, 0.12);
+            --alt-chip-border: rgba(255, 107, 107, 0.28);
             --btn-bg: #006400;
             --btn-bg-hover: #007a00;
             --btn-text: #ffffff;
@@ -123,9 +123,9 @@
             --accent-border-strong: rgba(0, 172, 0, 0.35);
             --accent-border-hover: rgba(0, 172, 0, 0.55);
             --accent-gradient: linear-gradient(90deg, #006400, #00ac00);
-            --chip-color: #00d400;
-            --chip-bg: rgba(0, 172, 0, 0.13);
-            --chip-border: rgba(0, 172, 0, 0.3);
+            --alt-chip-color: #ff7070;
+            --alt-chip-bg: rgba(255, 100, 100, 0.12);
+            --alt-chip-border: rgba(255, 107, 107, 0.28);
             --btn-bg: #00ac00;
             --btn-bg-hover: #00c400;
             --btn-text: #0b0f14;
@@ -201,14 +201,14 @@
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            background: var(--chip-bg);
-            border: 1px solid var(--chip-border);
+            background: var(--alt-chip-bg);
+            border: 1px solid var(--alt-chip-border);
             border-radius: 100px;
             padding: 5px 14px 5px 10px;
             font-family: 'Inter', sans-serif;
             font-size: 11px;
             font-weight: 500;
-            color: var(--chip-color);
+            color: var(--alt-chip-color);
             letter-spacing: 0.07em;
             text-transform: uppercase;
             margin-bottom: 2.5rem;
@@ -218,7 +218,7 @@
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background: var(--accent);
+            background: var(--alt-chip-color);
             animation: blink 2.4s ease-in-out infinite;
         }
 
@@ -272,7 +272,7 @@
 
         h1 em {
             font-style: normal;
-            color: var(--accent);
+            color: #ff7070;
         }
 
         /* ── Subheading ── */
@@ -458,6 +458,10 @@
         #theme-toggle:hover {
             background: var(--accent-hover);
             border-color: var(--accent-border-hover);
+        }
+
+        .chip-dot {
+            background: var(--chip-color);
         }
 
         /* ── Button list ── */
@@ -800,7 +804,7 @@
 
         <div class="chip a1">
             <span class="chip-dot">&#8203;</span>
-            Coming Soon
+            Under Maintenance
         </div>
 
         <div class="logo a2">
@@ -811,12 +815,12 @@
 
         <div class="accent-bar a3"></div>
 
-        <h1 class="a4">This website is<br><em>coming soon.</em></h1>
+        <h1 class="a4">We are undergoing <em>maintenance.</em></h1>
 
-        <p class="sub a4">We’re working on something great. Check back soon — it won’t be long.</p>
+        <p class="sub a4">Check the status page for the latest updates.</p>
 
         <div class="card a5">
-            <p class="card-label">Get in touch</p>
+            <p class="card-label">In the meantime</p>
             <div class="btn-list">
                 <a href="https://status.stuxedo.com" title="Stuxedo Status Page">
                     <svg viewBox="0 0 24 24">
