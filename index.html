@@ -57,7 +57,7 @@
                 --border: rgba(0, 0, 0, 0.08);
                 --border-input: rgba(0, 0, 0, 0.15);
                 --text-1: #081008;
-                --text-2: rgba(8, 16, 8, 0.55);
+                --text-2: rgba(0, 0, 0, 0.55);
                 --text-3: rgba(8, 16, 8, 0.35);
                 --accent: #006400;
                 --accent-dim: rgba(0, 100, 0, 0.08);
@@ -85,7 +85,7 @@
             --border: rgba(0, 0, 0, 0.08);
             --border-input: rgba(0, 0, 0, 0.15);
             --text-1: #081008;
-            --text-2: rgba(8, 16, 8, 0.55);
+            --text-2: rgba(0, 0, 0, 0.55);
             --text-3: rgba(8, 16, 8, 0.35);
             --accent: #006400;
             --accent-dim: rgba(0, 100, 0, 0.08);
@@ -282,7 +282,7 @@
             font-weight: 300;
             color: var(--text-2);
             line-height: 1.7;
-            margin-bottom: 2.75rem;
+            margin-bottom: 1.25rem;
         }
 
         /* ── Login card ── */
@@ -295,8 +295,17 @@
             max-width: 560px;
             width: 100%;
             ;
+            margin-top: 2.75rem;
             margin-bottom: 4rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
+
+        @media (prefers-color-scheme: light) {
+            .card { background: rgba(0, 0, 0, 0.04); }
+        }
+        :root.theme-light .card { background: rgba(0, 0, 0, 0.04); }
+        :root.theme-dark .card { background: rgba(255, 255, 255, 0.04); }
 
         .card-label {
             font-family: 'Inter', sans-serif;
@@ -536,7 +545,7 @@
             position: absolute;
             top: -30px;
             width: var(--sz, 14px);
-            height: calc(var(--sz, 14px) * 1.65);
+            height: calc(var(--sz, 14px) * 1.4);
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -546,7 +555,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            border-radius: 50% 5% 50% 5%;
+            border-radius: 50% 0 50% 0;
             transform: rotate(45deg);
         }
 
@@ -821,9 +830,8 @@
 
         <h1 class="a4">We are undergoing <em>maintenance.</em></h1>
 
-        <p class="sub a4">Check the status page for the latest updates.</p>
-
         <div class="card a5">
+            <p class="sub a4">Check the status page for the latest updates.</p>
             <p class="card-label">In the meantime</p>
             <div class="btn-list">
                 <a href="https://status.stuxedo.com" title="Stuxedo Status Page">
