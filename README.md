@@ -41,6 +41,12 @@ This project uses GitHub Pages and can be automatically deployed to your desired
 
 The live version is deployed at [maintenancepage.stuxedo.net](https://maintenancepage.stuxedo.net).
 
+## Previous designs
+
+This repository always holds the current Stuxedo design (v2, the tuxedo-cat logo colours). Earlier designs are preserved as their own archived repositories:
+
+- [maintenancepage-v1](https://github.com/Stuxedo/maintenancepage-v1): the original green design, live at [maintenancepage-v1.stuxedo.net](https://maintenancepage-v1.stuxedo.net/)
+
 ## License
 
 This project is open source and available for use and modification.
